@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crepe da JheJhe | Cardápio</title>
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="crepe_da_jhe_jhe_transparente.png" alt="">
+            <div class="eyebrow">Crepes preparados na hora</div>
+            <h1 class="brand">Crepe da <span>JheJhe</span></h1>
+            <p>Uma combinação de massa douradinha, recheios caprichados e muito sabor. Escolha seus crepes e envie seu
+                pedido diretamente pelo WhatsApp.</p><a class="cta" href="#cardapio">EXPLORAR CARDÁPIO ↓</a>
+        </div>
+    </header>
+    <nav class="sabores">
+        <a href="#salgados">Tradicionais</a>
+        <a href="#gourmet">Gourmet</a>
+        <a href="#doces">Doces</a>
+        <a href="#contato">Contato</a>
+        </nav>
+    <main id="cardapio">
+        <section id="salgados">
+            <div class="section-head">
+                <div>
+                    <div class="kicker">Para matar a fome</div>
+                    <h2>Crepes salgados</h2>
+                </div>
+                <div class="number">01</div>
+            </div>
+            <div class="menu-grid">
+                <article class="item">
+                    <div>
+                        <h3>Frango <span class="price">R$ 18,00</span></h3>
+                        <p class="desc">Frango bem temperado, queijo, tomate e cheddar.</p>
+                        <div class="tag">Sabor da casa</div><br><button class="add" onclick="add('Frango',18)">＋
+                            ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe salgado">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Calabresa <span class="price">R$ 18,00</span></h3>
+                        <p class="desc">Calabresa, queijo, tomate e cheddar.</p>
+                        <div class="tag">Sabor da casa</div><br><button class="add" onclick="add('Calabresa',18)">＋
+                            ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe de calabresa">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Napolitano <span class="price">R$ 18,00</span></h3>
+                        <p class="desc">Queijo, presunto, tomate e cheddar.</p>
+                        <div class="tag">Sabor da casa</div><br><button class="add" onclick="add('Napolitano',18)">＋
+                            ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe napolitano">
+                </article>
+            </div>
+        </section>
+        <section id="gourmet" style="margin-top:65px">
+            <div class="section-head">
+                <div>
+                    <div class="kicker">Um toque de doçura</div>
+                    <h2>Crepes gourmet</h2>
+                </div>
+                <div class="number">02</div>
+            </div>
+            <div class="menu-grid">
+                <article class="item">
+                    <div>
+                        <h3>Romeu e Julieta <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">A combinação clássica de goiabada e queijo.</p>
+                        <div class="tag">Doce clássico</div><br><button class="add"
+                            onclick="add('Romeu e Julieta',16)">＋ ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe doce">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Chocobanana <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">Chocolate, queijo e banana.</p>
+                        <div class="tag">Queridinho</div><br><button class="add" onclick="add('Chocobanana',16)">＋
+                            ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80"
+                        alt="Doce de chocolate">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Canela e Banana <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">Banana, canela e queijo.</p>
+                        <div class="tag">Leve e saboroso</div><br><button class="add"
+                            onclick="add('Canela e Banana',16)">＋ ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe doce com banana">
+                </article>
+            </div>
+        </section>
+        <section id="doces" style="margin-top:65px">
+            <div class="section-head">
+                <div>
+                    <div class="kicker">Um toque de doçura</div>
+                    <h2>Crepes doces</h2>
+                </div>
+                <div class="number">02</div>
+            </div>
+            <div class="menu-grid">
+                <article class="item">
+                    <div>
+                        <h3>Romeu e Julieta <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">A combinação clássica de goiabada e queijo.</p>
+                        <div class="tag">Doce clássico</div><br><button class="add"
+                            onclick="add('Romeu e Julieta',16)">＋ ADICIONAR</button>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=400&q=80" alt="Crepe doce">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Romeu e Julieta <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">A combinação clássica de goiabada e queijo.</p>
+                        <div class="tag">Doce clássico</div><br><button class="add"
+                            onclick="add('Romeu e Julieta',16)">＋ ADICIONAR</button>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=400&q=80" alt="Crepe doce">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Chocobanana <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">Chocolate, queijo e banana.</p>
+                        <div class="tag">Queridinho</div><br><button class="add" onclick="add('Chocobanana',16)">＋
+                            ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80"
+                        alt="Doce de chocolate">
+                </article>
+                <article class="item">
+                    <div>
+                        <h3>Canela e Banana <span class="price">R$ 16,00</span></h3>
+                        <p class="desc">Banana, canela e queijo.</p>
+                        <div class="tag">Leve e saboroso</div><br><button class="add"
+                            onclick="add('Canela e Banana',16)">＋ ADICIONAR</button>
+                    </div><img
+                        src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=400&q=80"
+                        alt="Crepe doce com banana">
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer id="contato">
+        <div>
+            <h3>CREPE DA JHEJHE</h3>
+            <p>Crepes preparados com carinho, ingredientes selecionados e aquele sabor especial.</p>
+        </div>
+        <div>
+            <div class="kicker">FAÇA SEU PEDIDO</div>
+            <p>Escolha seus sabores, informe seus dados e finalize o pedido pelo WhatsApp.</p>
+        </div>
+        <div>
+            <div class="kicker">CONTATO</div>
+            <p>WhatsApp: (61) 99167-6108<br>Atendimento mediante confirmação pelo WhatsApp.</p>
+        </div>
+    </footer>
+    <div class="copyright">© 2026 CREPE DA JHEJHE · PREÇOS SUGERIDOS, SUJEITOS A ALTERAÇÃO</div>
+    <div class="orderbar"><button class="cartbtn" onclick="openCart()">VER PEDIDO <span id="count">0</span></button>
+    </div>
+    <div class="overlay" id="overlay" onclick="if(event.target===this)closeCart()">
+        <div class="drawer">
+            <div class="drawer-head">
+                <div>
+                    <h2>Finalizar pedido</h2>
+                    <div class="sub">ENVIO DIRETO PELO WHATSAPP</div>
+                </div><button class="close" onclick="closeCart()">×</button>
+            </div>
+            <div class="sub" style="margin-top:20px">SEU PEDIDO</div>
+            <div class="cart-lines" id="lines">
+                <p style="color:#350148;font-size:13px">Seu carrinho está vazio.</p>
+            </div>
+            <div class="field"><label for="name">SEU NOME</label><input id="name" placeholder="Como podemos te chamar?">
+            </div>
+            <div class="field"><label>COMO VOCÊ QUER RECEBER?</label>
+                <div class="choice"><label><input type="radio" name="delivery" value="Entrega" checked
+                            onchange="toggleAddress()"> Entrega</label><label><input type="radio" name="delivery"
+                            value="Retirada" onchange="toggleAddress()"> Retirada</label></div>
+            </div>
+            <div class="field" id="addressField"><label for="address">ENDEREÇO DE ENTREGA</label><input id="address"
+                    placeholder="Rua, número, complemento e bairro"></div>
+            <div class="field"><label for="notes">OBSERVAÇÕES</label><textarea id="notes"
+                    placeholder="Alguma observação sobre seu pedido?"></textarea></div>
+            <div class="totals"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+            <button class="send" onclick="sendOrder()">ENVIAR PEDIDO PELO WHATSAPP</button>
+            <div class="hint">O pedido será enviado para confirmação no WhatsApp.</div>
+        </div>
+    </div>
+    <script>
+        const cart = {};
+        const money = n => n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        function add(name, price) { cart[name] = (cart[name] || { price, qty: 0 }); cart[name].qty++; render(); document.getElementById('count').textContent = Object.values(cart).reduce((a, b) => a + b.qty, 0) }
+        function change(name, delta) { cart[name].qty += delta; if (cart[name].qty <= 0) delete cart[name]; render(); document.getElementById('count').textContent = Object.values(cart).reduce((a, b) => a + b.qty, 0) }
+        function render() { const lines = document.getElementById('lines'); const entries = Object.entries(cart); lines.innerHTML = entries.length ? entries.map(([n, v]) => `<div class="cart-line"><div><strong>${n}</strong><br><small>${money(v.price)} cada</small></div><div class="qty"><button onclick="change('${n}',-1)">−</button> ${v.qty} <button onclick="change('${n}',1)">+</button></div><strong>${money(v.price * v.qty)}</strong></div>`).join('') : '<p style="color:#81766e;font-size:13px">Seu carrinho está vazio.</p>'; document.getElementById('total').textContent = money(entries.reduce((s, [, v]) => s + v.price * v.qty, 0)) }
+        function openCart() { document.getElementById('overlay').classList.add('open') }
+        function closeCart() { document.getElementById('overlay').classList.remove('open') }
+        function toggleAddress() { const delivery = document.querySelector('input[name="delivery"]:checked').value === 'Entrega'; document.getElementById('addressField').style.display = delivery ? 'block' : 'none' }
+        function sendOrder() { const entries = Object.entries(cart); if (!entries.length) { alert('Adicione pelo menos um crepe ao pedido.'); return } const name = document.getElementById('name').value.trim(); if (!name) { alert('Informe seu nome para continuar.'); document.getElementById('name').focus(); return } const method = document.querySelector('input[name="delivery"]:checked').value; const address = document.getElementById('address').value.trim(); if (method === 'Entrega' && !address) { alert('Informe o endereço de entrega.'); document.getElementById('address').focus(); return } const total = entries.reduce((s, [, v]) => s + v.price * v.qty, 0); let msg = `Olá! Quero fazer um pedido pelo cardápio do Crepe da JheJhe.%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*Recebimento:* ${encodeURIComponent(method)}`; if (method === 'Entrega') msg += `%0A*Endereço:* ${encodeURIComponent(address)}`; msg += '%0A%0A*Pedido:*'; entries.forEach(([n, v]) => { msg += `%0A• ${v.qty}x ${encodeURIComponent(n)} — ${encodeURIComponent(money(v.price * v.qty))}` }); msg += `%0A%0A*Total: ${encodeURIComponent(money(total))}*`; const notes = document.getElementById('notes').value.trim(); if (notes) msg += `%0A*Observações:* ${encodeURIComponent(notes)}`; window.open('https://wa.me/5561991676108?text=' + msg, '_blank') }
+    </script>
+</body>
+
+</html>
